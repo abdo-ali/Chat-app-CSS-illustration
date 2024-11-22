@@ -73,6 +73,7 @@ body{
     margin-top: 40px;
 
 }
+/*******************PHONE************************/
 .top-section{
     width: 80%;
     background-color: var(--cle-secondary-White);
@@ -82,6 +83,7 @@ body{
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    box-shadow: 0px 8px 70px 1px #8888
 }
 .phone{
     width: 100%;
@@ -93,6 +95,7 @@ body{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
+/*******************TOP-PHONE************************/
 .top-phone{
     width: 100%;
     padding: 30px 10px 10px 10px;
@@ -103,7 +106,7 @@ body{
     align-content: center;
     align-items: center; */
     gap: 10px;
-    background-image: linear-gradient(to right, var(--gradiant-Light-Magenta), var(--gradinat-Light-Violet));
+    background-image: linear-gradient(to right, var(--gradinat-Light-Violet), var(--gradiant-Light-Magenta));
     border-radius: 25px 25px 10px 10px;
     -webkit-border-radius: 25px 25px 10px 10px;
     -moz-border-radius: 25px 25px 10px 10px;
@@ -142,11 +145,10 @@ body{
     
 }
 .top-phone > p{
-    align-self: center;
+    font-weight: var(--fw-500);
+    font-size: x-large;
 }
-.three-dots{
-    align-self: center;
-}
+
 .three-dots::after{
     content: '\2807';
     font-size: 20px;
@@ -154,7 +156,7 @@ body{
      
 }
 .top-phone img{
-    width: 50px;
+    width: 40px;
     aspect-ratio: 1/1;
     border: 2px solid var(--cle-secondary-White);
     border-radius: 50%;
@@ -174,6 +176,14 @@ body{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+/*******************REMAIN-PHONE************************/
+.bottom-phone{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
 .chat-img{
     display: flex;
     flex-direction: row;
@@ -188,6 +198,114 @@ body{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+
+.chat{
+    width: 60%;
+    padding: 10px;
+}
+.left{
+    color: var(--clr-chat-left-Moderate-Violet);
+    background-color: hsl(276, 55%, 52%, .1);
+    border-radius: 15px 15px 15px 5px;
+    -webkit-border-radius: 15px 15px 15px 5px;
+    -moz-border-radius: 15px 15px 15px 5px;
+    -ms-border-radius: 15px 15px 15px 5px;
+    -o-border-radius: 15px 15px 15px 5px;
+}
+.right{
+    color: var(--clr-chat-right-Desaturated-Dark-Violet);
+    background-color: hsl(271, 15%, 43%, .1);
+    border-radius: 15px 15px 5px 15px;
+    -webkit-border-radius: 15px 15px 5px 15px;
+    -moz-border-radius: 15px 15px 5px 15px;
+    -ms-border-radius: 15px 15px 5px 15px;
+    -o-border-radius: 15px 15px 5px 15px;
+    align-self: flex-end;
+}
+.walk-time{
+    background-image: linear-gradient(to right, var(--gradiant-Light-Magenta), var(--gradinat-Light-Violet));
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+}
+.walk-radio{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.walk-time span{
+    font-weight: var(--fw-700);
+    color: var(--cle-secondary-White);
+}
+.walk-time p{
+    color: var(--clr-txt-Grayish-Blue);
+}
+input[type= "radio"]{
+    color: var(--cle-radio-btn-Very-Light-Magenta);
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+.submit{
+    /* align-self: center; */
+    width: 100%;
+    background-color: var(--cle-secondary-White);
+    /* height: ; */
+    padding: 10px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.submit input{
+    border: none;
+}
+input[type = "text"]{
+    color: var(--clr-paragraph-Dark-Grayish-Violet);
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+
+input[type = "submit"]{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: var(--cle-secondary-White);
+    font-weight: var(--fw-700);
+    font-size: 1rem;
+    background-color: var(--cle-submit-Very-Dark-Desaturated-Violet);
+}
+/*******************BOTTOM-SECTION************************/
+
+.bottom-section{
+    width: 80%;
+    margin: 50px 0;
+    text-align: center;
+}
+.bottom-section h1{
+    color: var(--clr-main-heading-Very-Dark-Desaturated-Violet);
+    font-weight: var(--fw-700);
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    
+}
+.bottom-section p{
+    color: var(--clr-paragraph-Dark-Grayish-Violet);
+    line-height: 1.6    ;
 }
 
 
